@@ -1,10 +1,7 @@
-import './App.css';
-
+import Body from "./components/Body";
 function App() {
   return (
-    <div className="text-center bg-slate-500">
-      Hello Netflix Users
-    </div>
+    <Body />
   );
 }
 
