@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="text-center bg-slate-500">
       Hello Netflix Users
     </div>
   );
