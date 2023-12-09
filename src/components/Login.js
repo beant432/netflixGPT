@@ -7,9 +7,9 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase.config";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BG_IMG, USER_AVTAR } from "../utils/constant";
 
 const Login = () => {
   const [isSignFormOpen, setIsSignFormOpen] = useState(true);
@@ -17,7 +17,6 @@ const Login = () => {
   const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleToggleChange = () => {
@@ -40,8 +39,7 @@ const Login = () => {
         .then(() => {
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
-            photoURL:
-              "https://yt3.ggpht.com/yti/ADpuP3P6QkQb_GKfZJJqFcFAcWrYpw4wyyAZ5_l3qA=s88-c-k-c0x00ffffff-no-rj",
+            photoURL: USER_AVTAR,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -53,7 +51,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               console.log(error);
@@ -70,9 +67,7 @@ const Login = () => {
         email.current.value,
         password.current.value
       )
-        .then(() => {
-          navigate("/browse");
-        })
+        .then(() => {})
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
@@ -85,7 +80,7 @@ const Login = () => {
       <Header />
       <div className="opacity-90 bg-black">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/b4c7f092-0488-48b7-854d-ca055a84fb4f/7cb9679b-dd82-47aa-8629-efe9606364cf/CA-en-20231204-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={BG_IMG}
           className="absolute z-10 h-[100vh]"
           alt="background"
           height={"100%"}
