@@ -14,3 +14,10 @@ export const API_OPTIONS = {
 };
 export const NOW_PLAYING_MOVIES_LIST_URL =
   "https://api.themoviedb.org/3/movie/now_playing?page=1";
+export const IMG_CDN_URL = "http://image.tmdb.org/t/p/w500";
+export const POPULAR_MOVIES_LIST_URL =
+  "https://api.themoviedb.org/3/movie/popular?page=1";
+export const TOP_RATED_MOVIES_LIST_URL =
+  "https://api.themoviedb.org/3/movie/top_rated?page=1";
+export const UPCOMING_MOVIES_LIST_URL =
+  "https://api.themoviedb.org/3/movie/upcoming?page=1'";
