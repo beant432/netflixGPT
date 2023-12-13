@@ -1,13 +1,14 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constant";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTrailerOfMovie } from "../utils/moviesSlice";
 
 const useTrailerOfMovie = (movieId) => {
   const dispatch = useDispatch();
+  const trailerOfMovies = useSelector((store) => store.movies.trailerVideo);
   useEffect(() => {
-    fetchVideosOfMovie();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    !trailerOfMovies && fetchVideosOfMovie();
   }, []);
   const fetchVideosOfMovie = async () => {
     const data = await fetch(
