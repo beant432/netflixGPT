@@ -9,13 +9,11 @@ const MovieList = (props) => {
       <h1 className="text-white text-3xl py-3">{title}</h1>
       <div className="flex  overflow-x-scroll">
         {movies.map((movie) => (
-          <div className="w-60 pr-4"  key={movie?.id}>
-            <MovieCard
-             
-              poster={movie?.poster_path}
-              imgName={movie.original_title}
-            />{" "}
-          </div>
+          <MovieCard
+            key={movie?.id}
+            poster={movie?.poster_path}
+            imgName={movie.original_title}
+          />
         ))}
       </div>
     </div>
