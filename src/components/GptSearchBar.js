@@ -47,10 +47,10 @@ const GptSearchBar = () => {
     fetchSuggestions();
   };
   return (
-    <div className="flex justify-center pt-[10%]">
+    <div className="flex justify-center pt-[50%] md:pt-[10%]">
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="grid grid-cols-12 w-1/2 z-10 absolute  bg-blue-200 p-2"
+        className="grid grid-cols-12 w-[95%] z-10 absolute bg-blue-200 p-0 md:w-1/2 md:p-2"
       >
         <input
           type="text"

@@ -9,7 +9,7 @@ const MainContainer = () => {
   const mainVideo = movieData[0];
   const { original_title, overview, id } = mainVideo || {};
   return (
-    <div>
+    <div className="pt-[50%] bg-black md:pt-0 md:bg-inherit">
       <VideoDetail title={original_title} overview={overview} />
       <VideoTrailer movieId={id} />
     </div>

@@ -54,8 +54,8 @@ const Header = () => {
 
   const gptSearch = useSelector((store) => store.gptSearch.gptSearchShow);
   return (
-    <div className="absolute w-full bg-gradient-to-b from-black px-8 py-3 z-30 flex justify-between">
-      <img src={LOGO} alt="logo" className="h-24 " />
+    <div className="absolute w-full bg-gradient-to-b from-black px-0 py-3 z-30 flex justify-between flex-col md:flex-row md:px-8">
+      <img src={LOGO} alt="logo" className="h-24 mx-auto md:mx-0" />
       {user && (
         <div className="p-4 r-0 flex">
           {gptSearch && (
@@ -80,7 +80,7 @@ const Header = () => {
           </button>
           <img alt="userIcon" src={user.photoURL} className="h-8 w-8 flex" />
           <span
-            className="text-white font-bold text-xl px-3 cursor-pointer"
+            className="text-white font-bold text-md px-3 cursor-pointer md:text-xl"
             onClick={() => handleSignOut()}
           >
             Sign Out

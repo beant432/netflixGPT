@@ -6,7 +6,7 @@ const MovieList = (props) => {
   if (!movies) return;
   return (
     <div className="mx-10 py-3">
-      <h1 className="text-white text-3xl py-3">{title}</h1>
+      <h1 className="text-white text-lg py-3 md:text-3xl">{title}</h1>
       <div className="flex  overflow-x-scroll">
         {movies.map((movie) => (
           <MovieCard

@@ -10,7 +10,7 @@ const GptSuggestions = () => {
   const { gptSearchMovieName, gptSearchMovieResult } = movies || {};
 
   return (
-    <div className=" bg-black opacity-90 mt-[12%]">
+    <div className=" bg-black opacity-90 mt-[16%] md:[12%]">
       {gptSearchMovieName?.map((movie, index) => (
         <MovieList
           title={movie}

@@ -88,7 +88,7 @@ const Login = () => {
         />
       </div>
       <form
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blend-luminosity bg-black text-white rounded-lg w-1/4 px-12 py-12 bg-opacity-80 z-10"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blend-luminosity bg-black text-white rounded-lg w-full md:w-1/4 px-5 md:px-12 py-12 bg-opacity-80 z-10"
         onSubmit={(e) => e.preventDefault()}
       >
         <h1 className="text-3xl font-bold">
