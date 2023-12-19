@@ -1,5 +1,5 @@
 {
-  "homepage": "https://beant432.github.io/netflixGPT",
+  "homepage": "https://beant432.github.io/",
   "name": "netflix-gpt",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^10.7.1",
+    "gh-pages": "^6.1.0",
     "openai": "^4.21.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0",
     "tailwindcss": "^3.3.6"
   }
 }
