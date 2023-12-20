@@ -23,13 +23,8 @@
 # firebase- use as backend for authenication
 
 deploy-
-npm i -g frirebase-tools
+https://netflixgpt08.netlify.app/
 
-firebase login
-firebase init
-
-npm run build
-firebase deploy
 
 # redux
 
