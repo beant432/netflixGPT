@@ -13,6 +13,7 @@ const MovieList = (props) => {
             key={movie?.id}
             poster={movie?.poster_path}
             imgName={movie.original_title}
+            id={movie?.id}
           />
         ))}
       </div>
