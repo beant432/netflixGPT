@@ -1,7 +1,8 @@
 export const lang={
     en:{
         "search":"Search",
-        "gptPlaceholder":"What do you want to watch today?"
+        "gptPlaceholder": "What do you want to watch today?",
+        "privateKeyPlaceholder":"Please enter your open AI private key"
     },
     hi:{
         "search":"खोज",
